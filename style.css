@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Share Tech Mono", monospace;
+    font-size: 25px;
+}
+
+body{
+    align-items: center;
+    background-color: rgb(176, 184, 176);
+}
+
+.Mikael{
+    background-color: antiquewhite;
+    margin: 5px auto;
+    width: 500px;
+    padding: 5px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.Mikael:hover{
+    transition: 0.25s;
+    background-color: rgb(243, 216, 180);
+    padding: 0px auto;
+    
+}
+
+.Mikael:hover > h1{
+    color: rgb(32, 31, 26);
+}
+
+.Mikael > img,
+.Mikael > h1 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.Mikael > img {
+    margin-right: 10px;
+    width: 75px;
+    height: 75px;  
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.Mikael:hover > img {
+    transition: 0.5s;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.Mikael > p{
+    display: none;
+    margin: 10px;
+    font-size: 15px;
+}
+
+.Mikael:hover > p{
+    display: block;
+    text-align: justify;
+}
+
+.gostos{
+    background-color: white;
+    margin: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gostos h1{
+    margin:0 100px;
+}
+
+.favoritos:hover{
+    background-color: black;
+    color: white;
+    transition: 0.25s;
+}
+
+.infos{
+    display: none;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    height: 200px;
+    width: 200px;
+}
+
+.favoritos:hover .infos{
+    width: 97%;
+    display: flex;
+    height: 400px;
+    gap: 5px;
+    left: 20px;
+}
+
+.infos img{
+    width: 10%;
+    height: 390px;
+    margin: 5px 0;
+    object-fit: cover;
+    border-radius: 10px;
+    border:2px solid white;
+    transition: all ease-out 0.5s;
+    cursor: pointer;
+}
+
+.infos img:hover{
+    width: 100%;
+}
